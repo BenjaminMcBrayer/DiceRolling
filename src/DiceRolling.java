@@ -21,10 +21,15 @@ public class DiceRolling {
 			// again.
 			checkForInteger(scnr);
 			numSides = scnr.nextInt();
-			System.out.println("Roll:");
-			rollDice(numSides);
+			if (numSides > 0 && numSides <= 20) {
+				System.out.println("Roll:");
+				rollDice(numSides);
+			} else {
+				System.out.println("Please enter a number between 1 and 20.");
+			}
 			System.out.println("Would you like to roll again (y/n)?");
 			playAgain = scnr.next();
+			
 
 		} while (playAgain.equalsIgnoreCase("y"));
 

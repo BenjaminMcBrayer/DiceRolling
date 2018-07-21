@@ -1,3 +1,4 @@
+
 //Benjamin McBrayer, 4.30.2018
 //This Java console program simulates the rolling of dice.
 
@@ -29,7 +30,6 @@ public class DiceRolling {
 			}
 			System.out.println("Would you like to roll again (y/n)?");
 			playAgain = scnr.next();
-			
 
 		} while (playAgain.equalsIgnoreCase("y"));
 
@@ -58,7 +58,7 @@ public class DiceRolling {
 		final int NUM_VALS = 2;
 		int[] rolls = new int[NUM_VALS];
 		Random diceRoller = new Random();
-		
+
 		for (int i = 0; i < NUM_VALS; ++i) {
 			rolls[i] = diceRoller.nextInt(numSides) + 1;
 			System.out.println(rolls[i]);

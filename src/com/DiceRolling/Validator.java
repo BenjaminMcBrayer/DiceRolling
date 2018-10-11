@@ -1,3 +1,4 @@
+package com.DiceRolling;
 import java.util.Scanner;
 
 public class Validator

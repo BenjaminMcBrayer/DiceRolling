@@ -1,3 +1,4 @@
+package com.DiceRolling;
 
 //Benjamin McBrayer, 4.30.2018
 //This Java console program simulates the rolling of dice.
@@ -37,7 +38,6 @@ public class DiceRolling {
 		System.out.println("Goodbye!");
 
 		scnr.close();
-
 	}
 
 	public static String getUserNameAndSayHello(Scanner scnr) {
